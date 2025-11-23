@@ -8,6 +8,7 @@ public static class DependenciesConfig
     {
         builder.Services.AddOpenApiServices();
         builder.Services.AddCorsServices();
+        builder.Services.AddAllHealthChecks();
         builder.Services.AddTransient<CourseData>();
     }
 }
